@@ -24,9 +24,15 @@ function addItem(e) {
 	itemList.appendChild(li);
 
 	let editbtn = document.createElement("button");
-	editbtn.className = "btn button-edit";
-	editbtn.appendChild(document.createTextNode("edit"));
-	button.insertAdjacentElement("beforeend", editbtn);
+	editbtn.className = "btn btn-danger btn-sm float-right ";
+	editbtn.style.border = "white";
+	editbtn.style.backgroundColor = "black";
+	editbtn.appendChild(document.createTextNode("EDIT"));
+	li.appendChild(editbtn);
+	// delbtn.appendChild(editbtn);
+	itemList.appendChild(li);
+	// delbtn.appendChild(editbtn);
+	// li.insertBefore(editbtn, li.lastChild);
 }
 
 //Remove item event
